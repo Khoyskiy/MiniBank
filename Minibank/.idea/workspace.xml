@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fabf27f5-40bd-4edf-a995-74e62f05592b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/DataBaseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerBank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerSignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/Bank.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/DataBaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerSignUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/Bank.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/Bank.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -146,7 +147,7 @@
       <workItem from="1694865649818" duration="55000" />
       <workItem from="1694865747669" duration="2268000" />
       <workItem from="1694869853445" duration="306000" />
-      <workItem from="1694870167416" duration="8567000" />
+      <workItem from="1694870167416" duration="9518000" />
     </task>
     <servers />
   </component>
