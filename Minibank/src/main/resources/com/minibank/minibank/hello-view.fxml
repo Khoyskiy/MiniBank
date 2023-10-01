@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="381.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerEnter">
    <children>
       <Line endX="-7.5" endY="251.0" fill="#9e1c1c" startX="363.70709228515625" startY="251.0" stroke="#0e9e17" />

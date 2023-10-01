@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fabf27f5-40bd-4edf-a995-74e62f05592b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5cef1638-5a3b-4670-bd00-0093c166cc25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5cef1638-5a3b-4670-bd00-0093c166cc25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5cef1638-5a3b-4670-bd00-0093c166cc25/storage_v2/_src_/schema/bank.PAYuAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5cef1638-5a3b-4670-bd00-0093c166cc25/storage_v2/_src_/schema/bank.PAYuAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/aff832e6-3caa-490c-95f2-b8d5622a77f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/aff832e6-3caa-490c-95f2-b8d5622a77f4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fb297625-a1ec-467b-b935-58e8c12ee72e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fb297625-a1ec-467b-b935-58e8c12ee72e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Data/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Data/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Data/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Data/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/DataBaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/DataBaseC/DataBaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/GmailSender/GmailSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/GmailSender/GmailSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/Appmain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/Appmain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerEnter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerEnter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerPINemail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerPINemail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerSignUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/ControllerSignUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/Bank.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/Bank.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minibank/minibank/PINemail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/PINemail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/PINemail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/minibank/minibank/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,28 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Minibank/MiniBank/MiniBank/src/main/resources/com/minibank/minibank/hello-view.fxml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Minibank/MiniBank/MiniBank/src/main/resources/com/minibank/minibank/hello-view.fxml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Appmain">
     <configuration name="Appmain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.minibank.minibank.Appmain" />
@@ -147,7 +157,17 @@
       <workItem from="1694865649818" duration="55000" />
       <workItem from="1694865747669" duration="2268000" />
       <workItem from="1694869853445" duration="306000" />
-      <workItem from="1694870167416" duration="9518000" />
+      <workItem from="1694870167416" duration="9692000" />
+      <workItem from="1695114754984" duration="643000" />
+      <workItem from="1695192950534" duration="89000" />
+      <workItem from="1695228968188" duration="688000" />
+      <workItem from="1695560605544" duration="3590000" />
+      <workItem from="1695565409884" duration="5404000" />
+      <workItem from="1695572100688" duration="7522000" />
+      <workItem from="1695987000019" duration="18037000" />
+      <workItem from="1696084477576" duration="6799000" />
+      <workItem from="1696091623507" duration="928000" />
+      <workItem from="1696145995364" duration="372000" />
     </task>
     <servers />
   </component>

@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="356.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerPINemail">
+   <children>
+      <Label layoutX="261.0" layoutY="22.0" prefHeight="50.0" prefWidth="107.0" text="Enter PIN " textFill="#ffffffb0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CubicCurve controlX1="45.58648681640625" controlX2="274.58648681640625" controlY1="144.79290771484375" controlY2="-18.0000057220459" endX="349.00006103515625" endY="-18.0000057220459" fill="#144604" layoutX="7.0" layoutY="18.0" startX="-156.2064208984375" startY="-21.0" stroke="BLACK" />
+      <TextField fx:id="PINemail" layoutX="24.0" layoutY="88.0" prefHeight="51.0" prefWidth="95.0" promptText="******" style="-fx-background-color: #181818;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Line endX="-7.5" endY="251.0" fill="#9e1c1c" layoutX="-8.0" layoutY="-113.0" startX="200.58982849121094" startY="251.0" stroke="#0e9e17" />
+   </children>
 </AnchorPane>

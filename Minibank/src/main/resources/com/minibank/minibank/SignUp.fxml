@@ -39,7 +39,12 @@
          </font>
       </TextField>
       <Line fx:id="t" endX="59.7935791015625" endY="309.7935791015625" startX="643.7935791015625" startY="309.7935791015625" stroke="#23a423" />
-      <TextField fx:id="signUpPas" layoutX="388.0" layoutY="231.0" prefHeight="51.0" prefWidth="259.0" promptText="Passport №" style="-fx-background-color: #181818; -fx-border-color: #144604; -fx-border-width: 3;">
+      <Button fx:id="Back" layoutX="7.0" layoutY="7.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="89.0" style="-fx-background-color: #144604;" text="&lt;-" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <TextField fx:id="signUpEmail" layoutX="388.0" layoutY="231.0" prefHeight="51.0" prefWidth="259.0" promptText="Email" style="-fx-background-color: #181818; -fx-border-color: #144604; -fx-border-width: 3;">
          <font>
             <Font size="16.0" />
          </font>
