@@ -10,7 +10,7 @@ public class GmailSender {
     private  String host = "smtp.gmail.com";
     private String smtpPort = "465";
 
-    public void send(String mess){
+    public void send(String mess, String email){
 
         Properties props= new Properties();
         props.put("mail.smtp.host", host);
@@ -31,7 +31,7 @@ public class GmailSender {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(from));
-            message.addRecipient(Message.RecipientType.TO,new InternetAddress("khokhoyskiy@gmail.com"));
+            message.addRecipient(Message.RecipientType.TO,new InternetAddress(email));
             message.setSubject("Check by mail");
             message.setText("Your Pincode for Mail Login - "+ mess);
 

@@ -2,13 +2,13 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.CubicCurve?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="664.0" prefWidth="1013.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerBank">
+<AnchorPane fx:id="mainAnchorPane" prefHeight="664.0" prefWidth="1013.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerBank">
    <children>
       <AnchorPane prefHeight="88.0" prefWidth="1020.0" style="-fx-background-color: #383838; -fx-border-width: 2; -fx-border-color: #909090;">
          <children>
@@ -17,25 +17,50 @@
                   <Font size="21.0" />
                </font>
             </Label>
-            <TextField layoutX="30.0" layoutY="44.0" promptText="Thybdjh Hjbbjd" style="-fx-background-color: #383838;" />
-            <Button layoutX="149.0" layoutY="15.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="120.0" style="-fx-background-color: #383838;" text="Wallet" textFill="#ffffffbd">
+            <Button fx:id="Wallet" layoutX="218.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="120.0" style="-fx-background-color: #383838;" text="Wallet" textFill="#ffffffbd">
                <font>
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button layoutX="263.0" layoutY="15.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="120.0" style="-fx-background-color: #383838;" text="History" textFill="#ffffffbc">
+            <Button fx:id="History" layoutX="341.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="120.0" style="-fx-background-color: #383838;" text="History" textFill="#ffffffbc">
                <font>
                   <Font size="21.0" />
                </font>
             </Button>
-            <Button layoutX="895.0" layoutY="15.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="100.0" style="-fx-background-color: #144604; -fx-border-radius: 7; -fx-border-color: #999999;" text="Exit" textFill="#ffffffbc">
+            <Button fx:id="Exit" layoutX="895.0" layoutY="15.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="100.0" style="-fx-background-color: #144604; -fx-border-radius: 7; -fx-border-color: #999999;" text="Exit" textFill="#ffffffbc">
                <font>
                   <Font size="26.0" />
                </font>
             </Button>
+            <Label fx:id="Name_client" layoutX="46.0" layoutY="44.0" prefHeight="31.0" prefWidth="185.0" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
       <CubicCurve controlX1="-268.9259338378906" controlX2="75.18428039550781" controlY1="218.0" controlY2="69.0" endX="868.0" endY="-1.0" fill="#144604" layoutX="151.0" layoutY="89.0" startX="-176.9390869140625" startY="-1.0" stroke="BLACK" />
-      <AnchorPane layoutX="14.0" layoutY="97.0" prefHeight="554.0" prefWidth="292.0" style="-fx-background-color: #202020;" />
+      <AnchorPane layoutX="14.0" layoutY="96.0" prefHeight="554.0" prefWidth="292.0" style="-fx-background-color: #202020;">
+         <children>
+            <Button fx:id="Delete" layoutX="11.0" layoutY="481.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #18181818; -fx-border-color: #11111111;" text="Видалити обліковий запис" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="Settings" layoutX="12.0" layoutY="422.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #18181818; -fx-border-color: #11111111;" text="Внести зміни" textFill="WHITE" onAction="#openSettings">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <MenuButton fx:id="MenuB" layoutX="11.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #18181818;" text="Переказ" textFill="WHITE">
+              <items>
+                <MenuItem fx:id="MenuB_card" mnemonicParsing="false" text="На карту" />
+                <MenuItem fx:id="MenuB_rec" mnemonicParsing="false" text="За реквізитом" />
+              </items>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </MenuButton>
+         </children></AnchorPane>
    </children>
 </AnchorPane>

@@ -3,13 +3,19 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.CubicCurve?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="381.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerEnter">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="381.0" style="-fx-background-color: #181818;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.minibank.minibank.ControllerEnter">
    <children>
+      <RadioButton fx:id="Kepp_log" layoutX="14.0" layoutY="266.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="226.0" text="Keep me loggin in" textFill="#a4a1a1">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
       <Line endX="-7.5" endY="251.0" fill="#9e1c1c" startX="363.70709228515625" startY="251.0" stroke="#0e9e17" />
       <PasswordField fx:id="password_field" layoutY="211.0" prefHeight="35.0" prefWidth="374.0" promptText="Password " style="-fx-background-color: #181818;">
          <font>

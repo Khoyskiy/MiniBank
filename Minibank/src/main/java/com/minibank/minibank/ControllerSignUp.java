@@ -141,7 +141,6 @@ public class ControllerSignUp {
                 System.err.println("PIN");
                 throw new IllegalArgumentException("Age cannot be negative");
             }
-            String PassText = signUppassword_field.getText();
             Card card = new Card(signUpPIN.getText(),sqlDate);
             Client client = new Client(signUpFN.getText(),signUpLN.getText(),sqlDate1,signUppassword_field.getText().trim(), signUpEmail.getText());
             dbHandler.singUpCard(card,client);

@@ -81,4 +81,106 @@ public class DataBaseHandler extends Config {
             throw new RuntimeException(e);
         }
     }
+    public void ReNameFirst(String FirstName, Client client)
+    {
+        String update = "UPDATE client SET First_name =? WHERE idClient =?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(update);
+            preparedStatement.setString(1, FirstName);
+            preparedStatement.setInt(2, client.getIdClient());
+            preparedStatement.executeUpdate();
+            client.setFirst_name(FirstName);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
+            throw new RuntimeException(e);
+        }
+    }
+    public void ReNameLast(String LastName, Client client)
+    {
+        String update = "UPDATE client SET Last_name =? WHERE idClient =?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(update);
+            preparedStatement.setString(1, LastName);
+            preparedStatement.setInt(2, client.getIdClient());
+            preparedStatement.executeUpdate();
+            client.setLast_name(LastName);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
+            throw new RuntimeException(e);
+        }
+    }
+    public void ReNamePass(String Password, Client client)
+    {
+        String update = "UPDATE client SET Password =? WHERE idClient =?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(update);
+            preparedStatement.setString(1, Password);
+            preparedStatement.setInt(2, client.getIdClient());
+            preparedStatement.executeUpdate();
+            client.setPassword(Password);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
+            throw new RuntimeException(e);
+        }
+    }
+    public void ReNameEmail(String Email, Client client)
+    {
+        String update = "UPDATE client SET Email =? WHERE idClient =?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(update);
+            preparedStatement.setString(1, Email);
+            preparedStatement.setInt(2, client.getIdClient());
+            preparedStatement.executeUpdate();
+            client.setEmail(Email);
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
+            throw new RuntimeException(e);
+        }
+    }
+    public void DeleteUser(Client client)
+    {
+        String deleteclient = "DELETE FROM client WHERE idClient = ?";
+        String deletecard = "DELETE FROM card WHERE idCard = ?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(deleteclient);
+            preparedStatement.setInt(1, client.getIdClient());
+            preparedStatement.execute();
+            PreparedStatement preparedStatementcard = getDbconnection().prepareStatement(deletecard);
+            preparedStatementcard.setInt(1, client.getIdCard());
+            preparedStatementcard.execute();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
+            throw new RuntimeException(e);
+        }
+    }
 }

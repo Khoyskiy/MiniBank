@@ -1,6 +1,5 @@
 package com.minibank.minibank;
 
-import com.minibank.GmailSender.GmailSender;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
