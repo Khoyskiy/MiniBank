@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 
+import com.Data.Card;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -52,6 +53,7 @@ public class ControllerEnter {
             if(!PassText.isEmpty()){
                 ResultSet resultSet = db.getUser(PassText);
                 Client client = new Client();
+                Card card = new Card();
 
                 int counter = 0;
                 while(true)
@@ -64,6 +66,14 @@ public class ControllerEnter {
                         client.setIdClient(resultSet.getInt("idClient"));
                         client.setBirthDay(resultSet.getDate("BirthDay"));
                         client.setPassword(resultSet.getString("Password"));
+                        client.setIdCard(resultSet.getInt("idCard"));
+                        card.setMoney(resultSet.getDouble("Money"));
+                        card.setCVC(resultSet.getInt("CVC"));
+                        card.setCardNumber(resultSet.getLong("Card_number"));
+                        card.setDateEnd(resultSet.getDate("Date_end"));
+                        card.setPinCode(resultSet.getString("Pincode"));
+                        card.setIdCard(resultSet.getInt("idCard"));
+                        client.setCard(card);
                         counter++;
                     } catch (SQLException e) {
                         throw new RuntimeException(e);

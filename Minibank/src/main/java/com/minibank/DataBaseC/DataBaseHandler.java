@@ -69,15 +69,59 @@ public class DataBaseHandler extends Config {
 
     public ResultSet getUser(String Pass) {
         ResultSet resultSet = null;
-        String select = "SELECT * FROM client WHERE Password =?";
+        String selectClient = "SELECT * FROM client,card WHERE Password =?";
 
         try {
-            PreparedStatement preparedStatement = getDbconnection().prepareStatement(select);
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(selectClient);
             preparedStatement.setString(1, Pass);
-
             resultSet = preparedStatement.executeQuery();
             return resultSet;
         } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public void SendMoney(String Number, Card card, double sum) throws SQLException {
+        Double to = null;
+        Double from = null;
+        String update1 = "UPDATE card SET Money = ? WHERE idCard = ?";
+        String update2 = "UPDATE card SET Money = ? WHERE Card_number = ?";
+
+        ResultSet resultSet = null;
+        String selectClient = "SELECT Money FROM card WHERE Card_number =?";
+        try {
+            PreparedStatement preparedStatement = getDbconnection().prepareStatement(selectClient);
+            preparedStatement.setString(1, Number);
+            resultSet = preparedStatement.executeQuery();
+        } catch (SQLException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        while(true) {
+            try {
+                if (!resultSet.next()) break;
+                to = resultSet.getDouble("Money") + sum;
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        from = card.getMoney()-sum;
+        card.setMoney(from);
+        try {
+            PreparedStatement preparedStatementFrom = getDbconnection().prepareStatement(update1);
+            preparedStatementFrom.setDouble(1,from);
+            preparedStatementFrom.setInt(2,card.getIdCard());
+            preparedStatementFrom.executeUpdate();
+            PreparedStatement preparedStatementTo = getDbconnection().prepareStatement(update2);
+            preparedStatementTo.setDouble(1,to);
+            preparedStatementTo.setString(2,Number);
+            preparedStatementTo.executeUpdate();
+
+        } catch (SQLException | ClassNotFoundException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("ERROR");
+            alert.setHeaderText(null);
+            alert.setContentText("Input data already exists");
+
+            alert.showAndWait();
             throw new RuntimeException(e);
         }
     }
@@ -183,4 +227,5 @@ public class DataBaseHandler extends Config {
             throw new RuntimeException(e);
         }
     }
+
 }

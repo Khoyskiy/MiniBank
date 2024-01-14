@@ -11,6 +11,8 @@ public class Client {
     private int idCard;
     private String Email;
 
+    private Card Mycard;
+
     public Client(String first_name, String last_name, Date birthDay, String password, String email) {
         First_name = first_name;
         Last_name = last_name;
@@ -91,4 +93,8 @@ public class Client {
     public void setEmail(String email) {
         Email = email;
     }
+    public void setCard(Card card) {
+        Mycard = card;
+    }
+    public Card getCard() {return Mycard;}
 }

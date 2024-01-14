@@ -47,7 +47,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="Settings" layoutX="12.0" layoutY="422.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #18181818; -fx-border-color: #11111111;" text="Внести зміни" textFill="WHITE" onAction="#openSettings">
+            <Button fx:id="Settings" layoutX="12.0" layoutY="422.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="270.0" style="-fx-background-color: #18181818; -fx-border-color: #11111111;" text="Внести зміни" textFill="WHITE" >
                <font>
                   <Font size="15.0" />
                </font>

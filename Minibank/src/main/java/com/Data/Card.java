@@ -1,7 +1,6 @@
 package com.Data;
 
 import java.sql.Date;
-import java.time.LocalDate;
 
 public class Card {
     private int idCard;
@@ -14,6 +13,8 @@ public class Card {
     public Card(String pinCode, Date dateEnd) {
         PinCode = pinCode;
         DateEnd = dateEnd;
+    }
+    public Card() {
     }
 
     @Override
@@ -32,13 +33,10 @@ public class Card {
         return DateEnd;
     }
 
-    public int getIdCard() {
-        return idCard;
-    }
-
     public void setIdCard(int idCard) {
         this.idCard = idCard;
     }
+    public int getIdCard() {return idCard;}
 
     public String getPinCode() {
         return PinCode;
@@ -55,13 +53,10 @@ public class Card {
     public int getCVC() {
         return CVC;
     }
-
-    public void setCVC(int CVC) {
-        this.CVC = CVC;
-    }
+    public void setCVC(int cvc) { CVC= cvc;}
 
     public double getMoney() {
-        return money;
+        return this.money;
     }
 
     public void setMoney(double money) {

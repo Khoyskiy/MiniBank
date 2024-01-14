@@ -75,16 +75,18 @@ public class ControllerBank {
             db.DeleteUser(current);
             Exit();
         });
+        Settings.setOnAction( actionEvent -> {openSettings("SettingAnchor.fxml", new ControllerSetting());});
+        MenuB_card.setOnAction(actionEvent -> {openSettings("CardSend.fxml",new ControllerCardS());});
     }
 
     @FXML
-    private void openSettings() {
+    private <T extends ControllerBank >void openSettings(String txml, T obj) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/minibank/minibank/SettingAnchor.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/minibank/minibank/"+txml));
             AnchorPane settingsPane = loader.load();
-            ControllerSetting controller = loader.getController();
-            controller.setClient(current);
-            controller.work();
+            obj = loader.getController();
+            obj.setClient(current);
+            obj.work();
             settingsPane.setLayoutX(317.0);
             settingsPane.setLayoutY(96);
             mainAnchorPane.getChildren().add(settingsPane);
@@ -101,6 +103,7 @@ public class ControllerBank {
     public void setClient(Client client) {
         current = client;
     }
+    @FXML
     private void Exit()
     {
         Exit.getScene().getWindow().hide();
